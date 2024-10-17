@@ -20,7 +20,7 @@ Este é um projeto simples de banco digital que permite que os usuários criem c
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/LucianoDenio/bleibleide-bank.git
+   https://github.com/LucianoDenio/conta_bancaria_Java_desafio.git
    ```
    Abra o projeto na sua IDE (ex: IntelliJ IDEA).
 
