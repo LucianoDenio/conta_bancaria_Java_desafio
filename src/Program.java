@@ -41,16 +41,12 @@ public class Program {
                 case 2:
                     System.out.print("Quanto você irá sacar: ");
                     double amount = sc.nextDouble();
-                    // Capture a mensagem retornada pelo método e imprima
-                    String saqueMessage = acc.atualizarSaque(amount);
-                    System.out.println(saqueMessage);
+                    acc.atualizarSaque(amount);
                     break;
                 case 3:
                     System.out.print("Quanto você irá depositar: ");
                     double deposit = sc.nextDouble();
-                    // Capture a mensagem retornada pelo método e imprima
-                    String depositoMessage = acc.atualizarDeposito(deposit);
-                    System.out.println(depositoMessage);
+                    acc.atualizarDeposito(deposit);
                     break;
                 case 4:
                     System.out.println("Obrigado por usar o banco Bleibleide, até a próxima!");

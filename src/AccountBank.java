@@ -46,24 +46,22 @@ public class AccountBank {
         return haveAmmount;
     }
 
-    public String atualizarDeposito(double ammount){
-        String result;
+    public void atualizarDeposito(double ammount){
         deposit(ammount);
-        result = "Deposito realizado com sucesso! Saldo atualizado: " + String.format("%.2f%n", balance);
-        return result;
+        System.out.println("Deposito realizado com sucesso! Saldo atualizado: " + String.format("%.2f%n", balance));
     }
 
-    public String atualizarSaque(double ammount) {
+    public void atualizarSaque(double ammount) {
         // Chama a função withdraw e verifica o resultado
-        String result;
+
         if (withDraw(ammount)) {
             // Se for verdadeiro, imprime mensagem de saldo atualizado
-            result = "Saque realizado com sucesso! Saldo atualizado: " + String.format("%.2f%n", balance);
+            System.out.println("Saque realizado com sucesso! Saldo atualizado: " + String.format("%.2f%n", balance));
         } else {
             // Se for falso, indica que não há saldo suficiente
-            result = "Não há saldo suficiente para saque.";
+            System.out.println("Não há saldo suficiente para saque.");
         }
-        return result;
+
     }
 
 
